@@ -22,14 +22,11 @@ if($status==false) {
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>NTNI 申請確認</title>
-  <link rel="icon" type="img/site_logo.png" href="img/site_logo.png">
+  <title>申請画面</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="logo_senter">
-    <a href="top.php"><img class="logo" src="img/rogo.png"></a>
-  </div>
+  <img class="logo" src="img/rogo.png">
   <div class="container">
     <form method="POST" action="request_act.php"> 
     <fieldset>
@@ -37,7 +34,12 @@ if($status==false) {
       <p>タイトル</p>
       <input class="rq" type="text" readonly name="idea_title" size="40" value="<?=$row["idea_title"]?>"><br>
       <p>内容</p>
-      <textArea class="rq" readonly name="idea_naiyou" rows="1" cols="42"><?=$row["idea_naiyou"]?></textArea><br>
+      <textArea class="rq" readonly name="idea_naiyou" rows="1" cols="42">
+        <?php 
+     $str1 = $row["idea_naiyou"] ;
+     $substr1 = mb_substr($str1, 0 ,0);
+      echo (''.$substr1.'申請することで閲覧可能です'); ?>
+      </textArea><br>
       <input type="hidden" name="idea_id" value="<?=$row["idea_id"]?>">
       <input type="hidden" name="request_status" value="1">
       <input class="btn" type="submit" value="申請">
