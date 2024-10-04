@@ -1,0 +1,225 @@
+/* 画面共通 */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #EEFFFF;
+  max-width: 1200px;
+}
+.logo_senter {
+  text-align:center;
+}
+
+.logo {
+  object-fit: cover;
+  width: 500px;
+  padding-top: 10px;
+}
+
+.container {
+  padding: 10px 20px 20px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1rem;
+}
+
+caption {
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+textarea {
+  resize: none;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 10px 10px;
+  background-color: #828282;
+  bottom: 0;
+  width: 100%;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 1.5em;
+  list-style-type: none;
+  margin: 0 0 .5em;
+  padding: .5em;
+}
+
+.menu_link {
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #777777;
+  border-radius: 3px;
+  margin-top: 10px;
+  
+}
+
+.search label {
+  flex-grow: 1;
+}
+
+.search input {
+  width: 500px;
+  height: 45px;
+  padding: 5px 15px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1em;
+  outline: none;
+}
+
+.search input::placeholder{
+  color: #777777;
+}
+
+.search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search button::after {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/search_button.svg);
+  background-repeat: no-repeat;
+  content: '';
+}
+
+.back_btn {
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+}
+
+fieldset {
+  font-size: 1.3rem;
+}
+
+fieldset input {
+  width: 100%;
+  font-size: 1rem;
+}
+
+fieldset textarea {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.btn {
+  width: 100px;
+  color: #fff;
+  background-color: #eb6100;
+  border: none;
+  padding: 10px;
+}
+.btn:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+.top_table {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.title_td {
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.henko_td {
+  padding-left: 20px;
+  width: 10%;
+  text-align: center;
+}
+
+.title_mypage_td {
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.touroku_table,
+.request_table {
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.touroku_tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.mypage_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0 0 .5em;
+  padding: .5em;
+}
+
+.mypage_li {
+  font-weight: 200;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.detail_btn {
+  display: block;
+  padding-top: 30px;
+}
+
+.rq {
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: none;
+  background-color: #EEFFFF;
+}
+
+.login_form input {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
