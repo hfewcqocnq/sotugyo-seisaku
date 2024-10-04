@@ -1,4 +1,4 @@
-# プロダクト名
+## プロダクト名
 
 - アイデア共有サービス　No Think No Idea
 
@@ -6,7 +6,7 @@
 
 - https://gsmito.sakura.ne.jp/ss/login.php
 
-## 作ったアプリケーション用のIDまたはPasswordがある場合
+## ID・PW
 
 - ID: test1
 - PW: test1
